@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cloud Computing Knowledge Base</title>
+<style>
+body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; line-height: 1.6; padding: 0 20px; }
+h1 { margin-bottom: 4px; }
+.subtitle { color: #666; }
+section { margin: 28px 0; }
+table { border-collapse: collapse; width: 100%; margin-top: 12px; }
+th, td { border: 1px solid #aaa; padding: 8px; text-align: left; }
+th { background: #eee; }
+</style>
+</head>
+<body>
+<h1>Cloud Computing Knowledge Base</h1>
+<p class="subtitle">Synthetic dataset for RAG experimentation</p>
+<section><h2>1. What is Cloud Computing?</h2><p>Cloud computing is the delivery of computing resources over a network, usually the internet.
+     Instead of purchasing and maintaining physical servers, organizations can rent compute, storage,
+     databases, networking, and other services from cloud providers. Cloud resources can generally be
+     provisioned on demand and scaled according to workload.</p></section><section><h2>2. Virtual Machines</h2><p>A virtual machine (VM) is a software-defined computer that runs on a physical host through a
+     hypervisor. A VM has virtual CPU, memory, storage, and networking resources. VMs provide strong
+     isolation and are useful when an application needs control over the operating system or runtime
+     environment. A major disadvantage is that each VM includes a full operating system, which consumes
+     additional resources compared with containers.</p></section><section><h2>3. Containers</h2><p>Containers package an application together with its dependencies while sharing the host operating
+     system kernel. Because containers are lighter than VMs, they can start quickly and allow many
+     workloads to run on the same machine. Docker is a popular container technology, while Kubernetes
+     is commonly used to orchestrate containers across multiple machines.</p></section><section><h2>4. Load Balancing</h2><p>A load balancer distributes incoming requests across multiple backend servers. Load balancing
+     improves availability and can increase capacity because traffic is spread across several instances.
+     Common strategies include round robin, least connections, and weighted routing. Health checks allow
+     a load balancer to stop sending traffic to an unhealthy server.</p></section><section><h2>5. Auto Scaling</h2><p>Auto scaling changes the number of running application instances according to demand.
+     For example, an application might run three instances during normal traffic and increase to ten
+     instances during a traffic spike. Scaling can be based on CPU utilization, request rate, queue
+     length, or other application metrics. Scale-out adds instances, while scale-in removes instances.</p></section><section><h2>6. Databases</h2><p>Cloud applications commonly use relational and NoSQL databases. Relational databases such as
+     MySQL organize data into tables and support SQL and transactions. NoSQL systems can provide flexible
+     schemas and horizontal scalability for particular workloads. Database replication is often used for
+     high availability and read scaling.</p></section><section><h2>7. Object Storage</h2><p>Object storage stores data as objects inside buckets or containers. It is well suited for images,
+     videos, backups, logs, and large files. Object storage is generally accessed through APIs rather than
+     traditional filesystem operations. Applications often store the file itself in object storage while
+     keeping metadata in a database.</p></section><section><h2>8. Caching</h2><p>A cache stores frequently accessed data closer to the application so that repeated requests can
+     be served faster. Redis is a commonly used in-memory data store for caching. Caching reduces database
+     load and latency, but applications must handle cache expiration, stale data, and cache invalidation.</p></section><section><h2>9. Message Queues</h2><p>A message queue allows producers and consumers to communicate asynchronously. A producer places a
+     message into a queue, and a consumer processes it later. Queues can absorb traffic spikes and prevent
+     slow downstream services from blocking the user-facing request. Common concepts include acknowledgments,
+     retries, visibility timeouts, and dead-letter queues.</p></section><section><h2>10. High Availability</h2><p>High availability means designing a system so that it continues operating despite failures.
+     Techniques include running multiple application instances, distributing workloads across availability
+     zones, using health checks, replicating databases, and avoiding single points of failure. High
+     availability does not necessarily mean zero downtime; it means reducing the probability and impact
+     of service interruption.</p></section><section>
+<h2>Quick Reference</h2>
+<table>
+<tr><th>Concept</th><th>Primary purpose</th></tr>
+<tr><td>Virtual machine</td><td>Run an isolated operating system environment</td></tr><tr><td>Container</td><td>Package and run an application efficiently</td></tr><tr><td>Load balancer</td><td>Distribute requests across servers</td></tr><tr><td>Auto scaling</td><td>Adjust capacity based on demand</td></tr><tr><td>Database</td><td>Persist and query structured or semi-structured data</td></tr><tr><td>Object storage</td><td>Store large files and blobs</td></tr><tr><td>Cache</td><td>Reduce latency and backend load</td></tr><tr><td>Message queue</td><td>Enable asynchronous processing</td></tr><tr><td>High availability</td><td>Reduce downtime caused by failures</td></tr></table>
+</section>
+</body>
+</html>
